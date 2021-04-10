@@ -213,7 +213,7 @@ li{
 }
 
 @media only screen and (max-width: 957px){
-    .main-section{
+    .main-section, .who-are-we{
         flex-direction: column;
     }
     .main-section-text button{
@@ -223,7 +223,7 @@ li{
 
 
 @media only screen and (max-width: 571px){
-    h1{
+    .main-section-text h1{
         font-size: 1.7rem;
     }
     button{
@@ -242,9 +242,16 @@ li{
     padding: 3rem;
 }
 
-.who-we-are-img{
+.who-are-we-text{
+    padding: 3rem;
+}
+
+.who-are-we-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img{
-        height: 200px;
-        width: 200px;
+        width: 40vw;
+        height: auto;
     }
 }
