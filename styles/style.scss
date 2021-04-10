@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #212529;
+    background: #DEE2E6;
+}
+
+section{
+    margin: 2rem auto;
+}
+
+button, h1{
+    text-transform: capitalize;
+}
+
+button{
+    color: #212529;
+    border: 3px solid black;
+    cursor: pointer;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.8rem;
+    border-radius: 3px;
+    outline: none;
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+header{
+    background: #ADB5BD;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    color: #212529;
+}
+
+li{
+    list-style: none;
+}
+
+/* Top navigation styles */
+
+.top-nav{
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.top-nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    li{
+        a{
+            text-align: center;
+        }
+        a:hover{
+            color: white;
+            transition: 0.2s;
+        }
+    }
+}
+
+
+.burger{
+    cursor: pointer;
+    display: none;
+    .burger-line{
+        width: 25px;
+        height: 3px;
+        border-radius: 3px;
+        background: #212529;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+}
+
+/* Increase space around top-nav-links elements */
+@media screen and (max-width: 1024px){
+    .top-nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .top-nav-links{
+        background: #eee;
+        position: absolute;
+        right: 0px;
+        top: 8vh;
+        height: 40vh;
+        width: 40%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        /* For fading in when clicked on burger */
+        li{
+            opacity: 0;
+        }
+        li:hover{
+            background-color: blue;
+        }
+    }
+
+    .burger{
+        display: block;
+    }
+}
+
+/* Active burger toggle */
+
+.burger-nav-active{
+    transform: translateX(0%);
+}
+
+.burger-toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-toggle .line2{
+    opacity: 0;
+}
+
+.burger-toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* End active burger toggle */
+
+/* End top navigation styles */
+
+.main-section{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.main-section-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 40vw;
+        height: auto;
+    }
+}
+
+.main-section-text{
+    padding: 3rem;
+    p{
+        margin-top: 1.7rem;
+    }
+    button{
+        display: block;
+        margin: 1.2rem 2.7rem auto auto;
+    }
+    width: 100%;
+}
+
+@media only screen and (max-width: 1231px){
+    h1{
+        font-size: 2.2rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    button{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 957px){
+    .main-section{
+        flex-direction: column;
+    }
+    .main-section-text button{
+        margin: 2rem auto 0 auto;
+    }
+}
+
+
+@media only screen and (max-width: 571px){
+    h1{
+        font-size: 1.7rem;
+    }
+    button{
+        font-size: 1.2rem;
+    }
+    p{
+        line-height: 1.5;
+    }
+}
+
+.who-are-we{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.who-we-are-img{
+    img{
+        height: 200px;
+        width: 200px;
+    }
+}
