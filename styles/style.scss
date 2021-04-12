@@ -12,7 +12,6 @@ body{
 }
 
 hr{
-    border: 1px solid black;
     width: 90%;
     margin: 3rem auto;
 }
@@ -41,7 +40,8 @@ h1{
 
 p{
     font-size: 1.2rem;
-    line-height: 1.7;
+    line-height: 2;
+    letter-spacing: 2px;
     text-align: justify;
 }
 
@@ -173,8 +173,6 @@ li{
     }
 }
 
-
-
 /* Active burger toggle */
 
 .burger-nav-active{
@@ -208,9 +206,6 @@ li{
 
 /* End top navigation styles */
 
-
-
-
 @media only screen and (max-width: 1231px){
     h1{
         font-size: 2.2rem;
@@ -228,8 +223,11 @@ li{
     text-transform: uppercase;
 }
 
+.section-title{
+    margin-bottom: 2rem;
+}
+
 .main-img-slider{
-    border: 1px solid red;
     margin: 2rem auto;
     width: 80%;
     height: 83vh;
@@ -242,26 +240,24 @@ li{
 }
 
 .what-is{
-    border: 1px solid red;
     display: flex;
     justify-content: center;
 }
 
 .what-is-text{
-    border: 1px solid black;
-    width: 40%;
-    margin-right: 1rem;
+    border: 1px solid red;
+    width: 50%;
     padding: 2rem;
 }
 
 .what-is-img{
-    margin-left: 1rem;
+    border: 1px solid red;
     width: 30%;
-    border: 1px solid black;
+    height: 50vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     img{
         width: 60%;
         height: auto;
@@ -288,7 +284,7 @@ li{
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1200px){
     .what-is{
         flex-direction: column;
         align-items: center;
@@ -296,9 +292,10 @@ li{
 
     .what-is-text{
         width: 70%;
-        h1{
-            text-align: center;
-        }
+    }
+
+    .section-title{
+        text-align: center;
     }
 
     .what-is-img{
@@ -311,4 +308,55 @@ li{
         }
     }
 
+}
+
+.who-are{
+    border: 1px solid red;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.who-are-text{
+    border: 1px solid black;
+    width: 50%;
+    padding: 2rem;
+}
+
+.who-are-img{
+    border: 1px solid black;
+    width: 30%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+@media screen and (max-width: 1200px){
+    .who-are{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .who-are-text{
+        order: 1;
+        width: 70%;
+    }
+
+    .who-are-img{
+        order: 2;
+    }
 }
