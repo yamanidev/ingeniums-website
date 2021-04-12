@@ -8,7 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: white;
-    background: #212529;
+    background: #292828;
 }
 
 hr{
@@ -46,7 +46,7 @@ p{
 }
 
 header{
-    background: #343a40;
+    background: #333232;
 }
 
 a{
@@ -63,10 +63,24 @@ li{
 /* Top navigation styles */
 
 .top-nav{
-    height: 8vh;
+    max-height: 8vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.8rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #333232;
+    img{
+        width: 100px;
+        height: auto;
+    }
 }
 
 .logo h1{
@@ -82,7 +96,7 @@ li{
     width: 40%;
     a{
         border-radius: 2rem;
-        padding: 0.8rem 1.5rem;
+        padding: 0.8rem 1.2rem;
         transition: 0.3s;
     }
     a:hover{
@@ -95,30 +109,48 @@ li{
 .burger{
     cursor: pointer;
     display: none;
-    .burger-line{
-        width: 25px;
-        height: 3px;
-        border-radius: 3px;
-        background: #212529;
-        margin: 5px;
-        transition: all 0.3s ease;
-    }
+}
+
+.burger-line{
+    width: 35px;
+    height: 3px;
+    border-radius: 3px;
+    background: white;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
 /* Increase space around top-nav-links elements */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1350px){ // width <= 1024px
     .top-nav-links{
-        width: 60%;
+        width: 50%;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1080px){
+    .top-nav-links{
+        width: 60%;
+        a{
+            padding: 0.6rem 1rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 850px){
+    .top-nav-links{
+        width: 75%;
+    }
+}
+// min-width: x ---> width >= x
+
+@media screen and (max-width: 768px){ // width <= 768px
     body{
         overflow-x: hidden;
     }
-
+    
     .top-nav-links{
-        background: #eee;
+        background: #333232;
         position: absolute;
         right: 0px;
         top: 8vh;
@@ -129,12 +161,10 @@ li{
         align-items: center;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+
         /* For fading in when clicked on burger */
         li{
             opacity: 0;
-        }
-        li:hover{
-            background-color: blue;
         }
     }
 
@@ -142,6 +172,8 @@ li{
         display: block;
     }
 }
+
+
 
 /* Active burger toggle */
 
@@ -176,35 +208,8 @@ li{
 
 /* End top navigation styles */
 
-.main-section{
-    border: 1px solid red;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem;
-}
 
-.main-section-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img{
-        width: 40vw;
-        height: auto;
-    }
-}
 
-.main-section-text{
-    padding: 3rem;
-    p{
-        margin-top: 1.7rem;
-    }
-    button{
-        display: block;
-        margin: 1.2rem 2.7rem auto auto;
-    }
-    width: 100%;
-}
 
 @media only screen and (max-width: 1231px){
     h1{
@@ -218,49 +223,6 @@ li{
     }
 }
 
-@media only screen and (max-width: 957px){
-    .main-section, .who-are-we{
-        flex-direction: column;
-    }
-    .main-section-text button{
-        margin: 2rem auto 0 auto;
-    }
-}
-
-
-@media only screen and (max-width: 571px){
-    .main-section-text h1{
-        font-size: 1.7rem;
-    }
-    button{
-        font-size: 1.2rem;
-    }
-    p{
-        line-height: 1.5;
-    }
-}
-
-.who-are-we{
-    border: 1px solid red;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-}
-
-.who-are-we-text{
-    padding: 3rem;
-}
-
-.who-are-we-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img{
-        width: 40vw;
-        height: auto;
-    }
-}
 
 .logo-text{
     text-transform: uppercase;
@@ -311,5 +273,42 @@ li{
         background: #343a40;
         border-radius: 110px;
         color: white;
+        transition: 0.3s;
     }
+    a:hover{
+        color: #343a40;
+        background: white;
+    }
+}
+
+@media screen and (max-width: 1325px){
+    .what-is-img a{
+        font-size: 2.4rem;
+        padding: 0.1rem 1.6rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .what-is{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-is-text{
+        width: 70%;
+        h1{
+            text-align: center;
+        }
+    }
+
+    .what-is-img{
+        width: 50%;
+        a{
+            order: 2;
+        }
+        img{
+            order: 1;
+        }
+    }
+
 }
