@@ -69,26 +69,20 @@ li{
     align-items: center;
 }
 
-.logo{
+.logo-curve{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1.8rem;
-    padding: 0.5rem;
+    margin-top: 1.3rem;
     border-radius: 50%;
     background-color: #333232;
-    img{
-        width: 100px;
-        height: auto;
-    }
 }
 
-.logo h1{
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 2rem;
+.logo-img{
+    width: 100px;
+    height: auto;
 }
+
 
 .top-nav-links{
     display: flex;
@@ -228,7 +222,8 @@ li{
 }
 
 .main-img-slider{
-    margin: 2rem auto;
+    border: 1px solid red;
+    margin: 2.5rem auto;
     width: 80%;
     height: 83vh;
     img{
@@ -358,5 +353,6 @@ li{
 
     .who-are-img{
         order: 2;
+        width: 40%;
     }
 }
