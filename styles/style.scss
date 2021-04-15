@@ -14,6 +14,13 @@ body{
     font-size: 16px;
     color: white;
     background: #292828;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
 }
 
 input{
@@ -416,7 +423,6 @@ li{
 
 .footer{
     border: 1px solid red;
-    max-height: 40vh;
     display: flex;
     justify-content: center;
     background: #333232;
@@ -432,7 +438,7 @@ li{
     border: 1px solid blue;
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 40%;
 }
 
 .footer-info-col{
@@ -520,3 +526,20 @@ li{
     font-size: 1rem;
 }
 
+@media screen and (max-width: 1260px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-media{
+        order: 1;
+        width: 60%;
+    }
+
+    .footer-info{
+        order: 2;
+        width: 70%;
+        border: 1px solid red;
+    }
+}
