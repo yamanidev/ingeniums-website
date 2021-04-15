@@ -16,6 +16,11 @@ body{
     background: #292828;
 }
 
+input{
+    outline: none;
+    border: none;
+}
+
 hr{
     width: 90%;
     margin: 3rem auto;
@@ -25,8 +30,18 @@ section{
     margin: 2rem auto;
 }
 
-button, h1{
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+button, h1, h4{
     text-transform: capitalize;
+}
+
+h4{
+    font-weight: 600;
 }
 
 h1{
@@ -35,6 +50,7 @@ h1{
 
 p{
     font-size: 1.2rem;
+    font-weight: 400;
     line-height: 2;
     letter-spacing: 2px;
     text-align: justify;
@@ -44,7 +60,9 @@ header{
     background: #333232;
     position: sticky;
     top: 0;
+    height: 8vh;
 }
+
 
 a{
     text-decoration: none;
@@ -84,6 +102,7 @@ li{
 .top-nav-links{
     display: flex;
     justify-content: space-between;
+    font-weight: 500;
     width: 40%;
     a{
         border-radius: 2rem;
@@ -220,7 +239,6 @@ li{
 }
 
 .main-img-slider{
-    border: 1px solid red;
     margin: 2.5rem auto;
     width: 80%;
     height: 83vh;
@@ -238,13 +256,11 @@ li{
 }
 
 .what-is-text{
-    border: 1px solid red;
     width: 50%;
     padding: 2rem;
 }
 
 .what-is-img{
-    border: 1px solid red;
     width: 30%;
     height: 50vh;
     display: flex;
@@ -304,19 +320,16 @@ li{
 }
 
 .who-are{
-    border: 1px solid red;
     display: flex;
     justify-content:space-evenly;
 }
 
 .who-are-text{
-    border: 1px solid black;
     width: 50%;
     padding: 2rem;
 }
 
 .who-are-img{
-    border: 1px solid black;
     width: 30%;
     height: auto;
     display: grid;
@@ -400,3 +413,110 @@ li{
         opacity: 1;
     }
 }
+
+.footer{
+    border: 1px solid red;
+    max-height: 40vh;
+    display: flex;
+    justify-content: center;
+    background: #333232;
+    margin-top: 2rem;
+    div{
+        margin: 1rem 2rem;
+        height: 100%;
+    }
+}
+
+
+.footer-info{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.footer-info-col{
+    ul{
+        margin-top: 1rem;
+        li{
+            margin: 0.3rem 0;
+            font-weight: 400;
+        }
+    }
+    h4{
+        position: relative;
+    }
+}
+
+.footer-info-col h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background: red;
+    box-sizing: border-box;
+    height: 0.1rem;
+    width: 4rem;
+}
+
+.footer-media{
+    border: 1px solid blue;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    ul{
+        display: flex;
+    }
+}
+
+.sm-icon{
+    margin: 0 2rem;
+    i{
+        font-size: 1.7rem;
+    }
+}
+.newsletter-form{
+    text-transform: capitalize;
+    p{
+        text-align: center;
+        font-weight: 500; 
+    }
+}
+
+.email-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0.8rem;
+    }
+}
+
+.newsletter-input{
+    height: 40px;
+    width: 280px;
+    padding: 0 3rem 0 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
