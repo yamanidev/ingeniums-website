@@ -37,22 +37,28 @@ section{
     margin: 2rem auto;
 }
 
+article{
+    margin: 4rem auto;
+}
+
 button{
     cursor: pointer;
     border: none;
     outline: none;
 }
 
-button, h1, h4{
+button, h1, h2, h3, h4, h5, h6{
     text-transform: capitalize;
-}
-
-h4{
-    font-weight: 600;
 }
 
 h1{
     font-size: 3.2rem;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
 p{
@@ -68,6 +74,7 @@ header{
     position: sticky;
     top: 0;
     height: 8vh;
+    z-index: 1;
 }
 
 
@@ -226,7 +233,10 @@ li{
 
 @media only screen and (max-width: 1231px){
     h1{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
     }
     p{
         font-size: 1.1rem;
@@ -543,5 +553,40 @@ li{
     .footer-info{
         order: 2;
         width: 90%;
+    }
+}
+
+
+.events{
+    padding: 2rem;
+}
+
+.event{
+    width: 90%;
+    padding: 2rem;
+}
+
+.event-circle{
+    background: #7d7a7a;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 2rem;
+    transform: translateY(-20%);
+}
+
+.event-text{
+    h2{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .event{
+        width: 95%;
     }
 }
