@@ -446,6 +446,7 @@ li{
 #copyrights{
     text-align: center;
     font-weight: 200;
+    font-size: 1rem;
 }
 
 
@@ -473,7 +474,7 @@ li{
     position: absolute;
     left: 0;
     bottom: -5px;
-    background: red;
+    background: white;
     box-sizing: border-box;
     height: 0.1rem;
     width: 4rem;
@@ -569,14 +570,18 @@ li{
 .event-circle{
     background: #7d7a7a;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     display: flex;
+    float: left;
     align-items: center;
     justify-content: center;
-    float: left;
-    margin-right: 2rem;
+    margin: 0 2rem;
     transform: translateY(-20%);
+}
+
+.right{
+    float: right;
 }
 
 .event-text{
@@ -589,4 +594,8 @@ li{
     .event{
         width: 95%;
     }
+}
+
+#event-separator{
+    width: 60%;
 }
