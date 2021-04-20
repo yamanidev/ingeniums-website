@@ -23,9 +23,15 @@ main{
     flex-grow: 1;
 }
 
-input{
+input, textarea, fieldset{
     outline: none;
     border: none;
+}
+
+textarea{
+    resize: none;
+    height: 200px;
+
 }
 
 hr{
@@ -598,4 +604,47 @@ li{
 
 #event-separator{
     width: 60%;
+}
+
+
+.contact-us{
+    width: 80%;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    p{
+        text-align: center;
+        margin: 1rem;
+    }
+}
+
+.contact-us-input{
+    display: block;
+    width: 80%;
+    margin: 2.5rem auto;
+    font-size: 1.2rem;
+    padding: 0.8rem 3rem;
+    border-radius: 5rem;
+}
+
+#submit-btn{
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    &:hover{
+        color: #333232;
+        transition: all 0.5s;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #submit-btn{
+        padding: 0.8rem 1.8rem;
+        font-size: 1.1rem;
+    }
+}
+
+.contact-us-msg{
+    border-radius: 2rem;
 }
