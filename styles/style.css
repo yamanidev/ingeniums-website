@@ -582,6 +582,10 @@ li {
   position: relative;
 }
 
+.club-info {
+  border-bottom: 1px solid white;
+}
+
 .footer-info-col h4::before {
   content: "";
   position: absolute;
