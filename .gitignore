@@ -1,2 +1,2 @@
-/styles/style.css.map
-toDo
+node_modules/
+public/assets/styles/*.css.map

@@ -1,0 +1,21 @@
+{
+  "name": "ingeniums-website",
+  "version": "1.0.0",
+  "description": "Website for the scientific club Ingeniums of ESI SBA",
+  "scripts": {
+    "sass-watch": "sass --watch src/sass/main.scss public/assets/styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamanidev/ingeniums-website.git"
+  },
+  "author": "yamanidev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamanidev/ingeniums-website/issues"
+  },
+  "homepage": "https://github.com/yamanidev/ingeniums-website#readme",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
+}
