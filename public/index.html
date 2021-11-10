@@ -11,22 +11,22 @@
 
     <!-- Font awesome social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-
-    <link rel="stylesheet" href="/styles/style.css">
-    <title>Ingeniums | Contact Us</title>
+                                
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Ingeniums | Home</title>
 </head>
 <body>
     <header>
         <nav class="top-nav">
-            <a class="logo-curve" href="/">
-                <img class="logo-img" src="/img/logo/Logo2500w.png" alt="Ingeniums logo">
+            <a class="logo-curve" href=".">
+                <img class="logo-img" src="assets/img/logo/Logo2500w.png" alt="Ingeniums logo">
             </a>
             <ul class="top-nav-links">
-                <li><a href="/">home</a></li>
-                <li><a href="/activities/">activities</a></li>
-                <li><a href="/about-us/">about us</a></li>
+                <li><a href=".">home</a></li>
+                <li><a href="activities/">activities</a></li>
+                <li><a href="about-us/">about us</a></li>
                 <li><a href="#">join us</a></li>
-                <li><a href="/contact-us/">contact us</a></li>
+                <li><a href="contact-us/">contact us</a></li>
             </ul>
             <div class="burger">
                 <div class="burger-line line1"></div>
@@ -36,20 +36,53 @@
         </nav>
     </header>
 
-    <main>
-        <section class="contact-us">
-            <h1>contact us</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est rerum fuga, explicabo animi doloremque porro et nulla dolor quos excepturi.</p>
+    <button id="scroll-top-btn">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </button>
 
-            <form method="post" action="" class="contact-form">
-                <fieldset>
-                    <input type="text" class="contact-us-input" placeholder="Full Name" required>
-                    <input type="email" class="contact-us-input" placeholder="Email" required>
-                    <input type="text" class="contact-us-input" placeholder="Subject" required>
-                    <textarea name="" class="contact-us-input contact-us-msg" placeholder="Message" required></textarea>
-                    <input type="submit" id="submit-btn" value="Send">
-                </fieldset>
-            </form>
+    <main>
+        <div class="main-img-slider">
+            <img src="assets/img/2.jpg" alt="">
+        </div>
+
+        <hr>
+
+        <section class="what-is">
+
+            <div class="what-is-text">
+                <h1 class="section-title">what is <span class="logo-text">ingeniums</span>?</h1>
+                <p>Ingeniums is a cultural and scientific club based in the higher school of computer science in Sidi-Bel-Abbes, a place where the members and the other students exchange their knowledge and learn from each other.</p>
+            </div>
+
+            <div class="what-is-img">
+                <img src="assets/img/logo/white-logo.svg" alt="">
+                <a href="#">join us!</a>
+            </div>
+
+        </section>
+        
+        <hr>
+
+        <section class="who-are">
+
+            <div class="who-are-img">
+                <div class="row">
+                    <div class="column">
+                        <img src="assets/img/1.jpg" alt="">
+                        <img src="assets/img/1.jpg" alt="">
+                    </div>
+                    <div class="column">
+                        <img src="assets/img/1.jpg" alt="">
+                        <img src="assets/img/1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="who-are-text">
+                <h1 class="section-title">who are we?</h1>
+                <p>We are a group of passionate students interested in everything related to computer science, we collaborate to make events that help us and the others to develop ourselves and build future careers, our values are: Connect, Learn, Share, Innovate, and Create. And we also share the following visions: spreading knowledge, helping the community, and have fun!
+                </p>
+            </div>
 
         </section>
     </main>
@@ -62,13 +95,13 @@
                     <h4>navigate</h4>
                     <ul>
                         <li>
-                            <a href="/">home</a>
+                            <a href=".">home</a>
                         </li>
                         <li>
-                            <a href="/activities/">activities</a>
+                            <a href="activities/">activities</a>
                         </li>
                         <li>
-                            <a href="/about-us/">about us</a>
+                            <a href="about-us/">about us</a>
                         </li>
                         <li>
                             <a href="#">join us</a>
@@ -115,7 +148,7 @@
 
                 <div class="newsletter-form">
 
-                    <form action="">
+                    <form>
                         <p>join our newsletter</p>
                         <div class="email-box">
                             <input class="newsletter-input" type="email" placeholder="Enter Email Address">
@@ -131,8 +164,8 @@
 
         </div>
         <p id="copyrights">Copyright &copy; <script>document.write(new Date().getFullYear())</script>, INGENIUMS. All Rights Reserved.</p>
-    </footer>
 
-    <script src="/scripts/main.js"></script>
+    </footer>
+    <script src="assets/scripts/main.js"></script>
 </body>
 </html>
