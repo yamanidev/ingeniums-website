@@ -1,0 +1,129 @@
+.top-nav{
+    max-height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-curve{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.3rem;
+    border-radius: 50%;
+    background-color: $mainColor;
+}
+
+.logo-img{
+    width: 100px;
+    height: auto;
+}
+
+.top-nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    a{
+        border-radius: 2rem;
+        padding: 0.8rem 1.2rem;
+        transition: 0.3s;
+    }
+    a:hover{
+        background: white;
+    }
+}
+
+.burger{
+    cursor: pointer;
+    display: none;
+}
+
+.burger-line{
+    width: 35px;
+    height: 3px;
+    border-radius: 3px;
+    background: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Increase space around top-nav-links elements */
+@media screen and (max-width: 1350px){ // width <= 1024px
+    .top-nav-links{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .top-nav-links{
+        width: 60%;
+        a{
+            padding: 0.6rem 1rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 850px){
+    .top-nav-links{
+        width: 75%;
+    }
+}
+// min-width: x ---> width >= x
+
+@media screen and (max-width: 768px){ // width <= 768px
+    body{
+        overflow-x: hidden;
+    }
+    
+    .top-nav-links{
+        height: 40vh;
+        width: 40%;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        right: 0px;
+        top: 8vh;
+        background: $mainColor;
+        transform: translateX(100%);
+
+        /* For fading in when clicked on burger */
+        li{
+            opacity: 0;
+        }
+    }
+
+    .burger{
+        display: block;
+    }
+}
+
+.burger-nav-active{
+    transform: translateX(0%);
+    display: flex;
+}
+
+.burger-toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-toggle .line2{
+    opacity: 0;
+}
+
+.burger-toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
