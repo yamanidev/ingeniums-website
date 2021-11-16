@@ -141,5 +141,11 @@ ul {
     display: block;
   }
 }
+.img-slider {
+  width: 80%;
+  height: 600px;
+  margin: 3rem auto;
+  outline: 1px solid white;
+}
 
 /*# sourceMappingURL=style.css.map */
