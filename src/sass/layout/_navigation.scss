@@ -4,6 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .top-nav-logo{
@@ -12,6 +14,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 2;
     top: 0.8rem;
     img{
         height: 100px;
@@ -89,7 +92,7 @@
         position: absolute;
         right: -100%;
         top: 63px;
-        z-index: -1;
+        z-index: 1;
         flex-direction: column;
         text-align: center;
         background-color: $brown;
