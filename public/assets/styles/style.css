@@ -22,6 +22,11 @@ ul {
   list-style: none;
 }
 
+hr {
+  width: 90%;
+  margin: 3rem auto;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -39,6 +44,8 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .top-nav-logo {
@@ -47,6 +54,7 @@ ul {
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 2;
   top: 0.8rem;
 }
 .top-nav-logo img {
@@ -121,7 +129,7 @@ ul {
     position: absolute;
     right: -100%;
     top: 63px;
-    z-index: -1;
+    z-index: 1;
     flex-direction: column;
     text-align: center;
     background-color: #333232;
