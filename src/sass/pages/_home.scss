@@ -4,3 +4,67 @@
     margin: 3rem auto;
     outline: 1px solid white;
 }
+
+.what-is-ing{
+    display: flex;
+    justify-content: space-between;
+    div{
+        // border: 1px solid red;
+    }
+}
+
+.what-is-ing-text{
+    padding: 0rem 3rem 0 0;
+
+    h2{
+        margin-bottom: 1rem;
+    }
+}
+
+.what-is-ing-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+    img{
+        // border: 1px solid blue;
+        width: 280px;
+        height: auto;
+    }
+}
+
+.join-us-link{
+    margin-top: 2rem;
+    padding: 0.3rem 1.3rem;
+    font-size: 2rem;
+    border-radius: 50px;
+    background-color: $blue-dark;
+    transition: 0.3s;
+}
+
+.join-us-link:hover, .join-us-link:active{
+    color: $blue-dark;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 920px){
+    
+    .what-is-ing{
+        flex-direction: column;
+    }
+
+    .what-is-ing-text {
+        padding: 0;
+
+        h2{
+            text-align: center;
+        }
+    }
+
+    .what-is-ing-img{
+        padding-top: 1rem;
+    }
+
+}
