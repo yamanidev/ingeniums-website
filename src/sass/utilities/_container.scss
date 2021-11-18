@@ -7,6 +7,12 @@
 
 @media screen and (max-width: 1230px){
     .container{
-        padding: 0 0.5rem;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        padding: 0 0.7rem;
     }
 }
