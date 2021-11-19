@@ -1,11 +1,15 @@
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
 .top-nav{
     height: 8vh;
     min-height: 63px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    z-index: 2;
 }
 
 .top-nav-logo{

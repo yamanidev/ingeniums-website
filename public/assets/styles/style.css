@@ -67,14 +67,18 @@ a {
     padding: 0 0.5rem;
   }
 }
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
 .top-nav {
   height: 8vh;
   min-height: 63px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  z-index: 2;
 }
 
 .top-nav-logo {
@@ -189,6 +193,7 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
 .what-is-ing-text {
   padding: 0rem 3rem 0 0;
 }
