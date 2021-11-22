@@ -8,11 +8,13 @@
 .what-is-ing{
     display: flex;
     justify-content: space-between;
+    div{
+        // outline: 1px solid red;
+    }
 }
 
 .what-is-ing-text{
-    padding: 0rem 3rem 0 0;
-
+    padding-right: 4rem;
     h2{
         margin-bottom: 1rem;
     }
@@ -34,7 +36,7 @@
 
 .join-us-link{
     margin-top: 2rem;
-    padding: 0.3rem 1.3rem;
+    padding: 0.5rem 1.5rem;
     font-size: 2rem;
     border-radius: 50px;
     background-color: $blue-dark;
