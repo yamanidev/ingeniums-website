@@ -1,3 +1,7 @@
+.section-title{
+    margin-bottom: 1rem;
+}
+
 .img-slider{
     width: 80%;
     height: 600px;
@@ -5,19 +9,15 @@
     outline: 1px solid white;
 }
 
+// What is INGENIUMS
+
 .what-is-ing{
     display: flex;
     justify-content: space-between;
-    div{
-        // outline: 1px solid red;
-    }
 }
 
 .what-is-ing-text{
     padding-right: 4rem;
-    h2{
-        margin-bottom: 1rem;
-    }
 }
 
 .what-is-ing-img{
@@ -25,10 +25,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 
     img{
-        // border: 1px solid blue;
         width: 280px;
         height: auto;
     }
@@ -48,7 +46,38 @@
     background-color: #fff;
 }
 
-@media screen and (max-width: 920px){
+// Who are we
+
+.who-are-we{
+    display: flex;
+    align-items: center;
+}
+
+.who-are-we-images{
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.who-are-we-img{
+    height: 215px;
+    width: 240px;
+    border: 1px solid #fff;
+}
+
+.who-are-we-text{
+    padding-left: 2rem;
+}
+
+@media screen and (max-width: 1000px){
+
+    .section-title{
+        text-align: center;
+    }
+
+    // What is INGENIUMS
     
     .what-is-ing{
         flex-direction: column;
@@ -56,14 +85,31 @@
 
     .what-is-ing-text {
         padding: 0;
-
-        h2{
-            text-align: center;
-        }
     }
 
     .what-is-ing-img{
         padding-top: 1rem;
+    }
+
+    // Who are we
+
+    .who-are-we{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .who-are-we-text{
+        order: 1;
+        padding-left: 0;
+    }
+
+    .who-are-we-images{
+        order: 2;
+        padding-top: 1rem;
+    }
+
+    .who-are-we-img{
+        width: auto;
     }
 
 }
