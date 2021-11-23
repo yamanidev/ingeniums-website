@@ -5,11 +5,10 @@
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: #292828;
-}
-
-header {
-  background-color: #333232;
 }
 
 ul {
@@ -71,6 +70,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 2;
+  background-color: #333232;
 }
 
 .top-nav {
@@ -182,6 +182,10 @@ a {
     display: block;
   }
 }
+footer {
+  margin-top: auto;
+}
+
 .section-title {
   margin-bottom: 1rem;
 }

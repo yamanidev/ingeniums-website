@@ -2,6 +2,7 @@
     position: sticky;
     top: 0;
     z-index: 2;
+    background-color: $brown;
 }
 
 .top-nav{
@@ -82,8 +83,6 @@
     background: white;
     transition: all 0.3s ease;
 }
-
-// sm:absolute sm:max-w-none sm:w-full sm:h-44 sm:flex-col sm:justify-around sm:top-[4.9rem] sm:right-0 sm:z-10 sm:-left-full sm:duration-300 sm:text-center sm:bg-[#C0022F0D] sm:bg-[#fcf2f4]
 
 @media screen and (max-width: 800px){
 
