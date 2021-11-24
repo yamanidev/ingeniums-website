@@ -1,6 +1,8 @@
 .header{
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 2;
     background-color: $brown;
 }
@@ -21,6 +23,7 @@
     position: relative;
     z-index: 2;
     top: 0.8rem;
+
     img{
         height: 100px;
         width: auto;
@@ -35,12 +38,15 @@
 .top-nav-links{
     display: flex;
     align-items: center;
+
     li{
         padding: 0 0.9rem;
     }
 }
 
 .top-nav-links.active{
+    height: auto;
+    opacity: 1;
     right: 0;
 }
 
@@ -92,6 +98,9 @@
 
     .top-nav-links{
         width: 100%;
+        height: 0;
+        opacity: 0;
+        overflow-y: hidden;
         position: absolute;
         right: -100%;
         top: 63px;
@@ -99,7 +108,8 @@
         flex-direction: column;
         text-align: center;
         background-color: $brown;
-        transition-duration: 0.5s;
+        transition: right 0.5s, visibility 0.2s;
+        
         li{
             width: 100%;
             padding: 0;
