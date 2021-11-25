@@ -1,3 +1,16 @@
-footer{
+.footer{
+    min-height: 300px;
     margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $brown;
+    border: 1px solid white;
 }
+
+.copyrights{
+    margin-top: auto;
+    font-weight: 200;
+    text-align: center;
+    background-color: $brown-dark;
+}
+

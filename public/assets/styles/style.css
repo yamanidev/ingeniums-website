@@ -36,7 +36,7 @@ h3 {
   font-weight: 500;
 }
 
-p {
+section p {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 2;
@@ -69,6 +69,8 @@ a {
 .header {
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
   background-color: #333232;
 }
@@ -109,6 +111,8 @@ a {
 }
 
 .top-nav-links.active {
+  height: auto;
+  opacity: 1;
   right: 0;
 }
 
@@ -159,6 +163,9 @@ a {
 
   .top-nav-links {
     width: 100%;
+    height: 0;
+    opacity: 0;
+    overflow-y: hidden;
     position: absolute;
     right: -100%;
     top: 63px;
@@ -166,7 +173,7 @@ a {
     flex-direction: column;
     text-align: center;
     background-color: #333232;
-    transition-duration: 0.5s;
+    transition: right 0.5s, visibility 0.2s;
   }
   .top-nav-links li {
     width: 100%;
@@ -182,8 +189,20 @@ a {
     display: block;
   }
 }
-footer {
+.footer {
+  min-height: 300px;
   margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #333232;
+  border: 1px solid white;
+}
+
+.copyrights {
+  margin-top: auto;
+  font-weight: 200;
+  text-align: center;
+  background-color: #292828;
 }
 
 .section-title {
