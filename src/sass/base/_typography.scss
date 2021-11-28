@@ -4,16 +4,6 @@ body{
     color: #fff;
 }
 
-h2{
-    font-size: 3.2rem;
-    font-weight: 600;
-}
-
-h3{
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-
 section p{
     font-size: 1.2rem;
     font-weight: 400;
@@ -26,4 +16,19 @@ a{
     text-decoration: none;
     outline: none;
     color: inherit;
+}
+
+button, input{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.footer-title{
+    font-size: 1.4rem;
+    font-weight: 600;
 }
