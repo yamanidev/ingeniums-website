@@ -1,2 +1,2 @@
 # ingeniums-website
- Website for the scientific club Ingeniums of ESI SBA
+ Website for the scientific club Ingeniums of ESI SBA (work in progress).
