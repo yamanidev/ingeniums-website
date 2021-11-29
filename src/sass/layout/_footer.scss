@@ -3,13 +3,6 @@
     background-color: $brown;
 }
 
-.copyrights{
-    margin-top: auto;
-    font-weight: 200;
-    text-align: center;
-    background-color: $brown-dark;
-}
-
 .footer .container{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -112,10 +105,6 @@
     background-color: $brown-dark;
 }
 
-.footer .container > *{
-    // outline: 1px solid white;
-}
-
 @media screen and (max-width: 920px){
     .footer .container{
         flex-direction: column;
@@ -131,4 +120,12 @@
     #subscribeToNewsletter{
         margin-top: 0.5rem;
     }
+}
+
+.copyrights{
+    margin-top: auto;
+    padding: 0 0.5rem;
+    font-weight: 200;
+    text-align: center;
+    background-color: $brown-dark;
 }

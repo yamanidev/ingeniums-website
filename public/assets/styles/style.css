@@ -206,13 +206,6 @@ button, input {
   background-color: #333232;
 }
 
-.copyrights {
-  margin-top: auto;
-  font-weight: 200;
-  text-align: center;
-  background-color: #292828;
-}
-
 .footer .container {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -331,6 +324,14 @@ button, input {
     margin-top: 0.5rem;
   }
 }
+.copyrights {
+  margin-top: auto;
+  padding: 0 0.5rem;
+  font-weight: 200;
+  text-align: center;
+  background-color: #292828;
+}
+
 #scroll-top-btn {
   width: 55px;
   height: 55px;
