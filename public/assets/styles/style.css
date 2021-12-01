@@ -288,17 +288,18 @@ button, input {
 }
 
 #newsletterInput, #subscribeToNewsletter {
-  padding: 0.4rem;
   border-radius: 5px;
 }
 
 #newsletterInput {
   width: 100%;
   max-width: 320px;
+  padding: 0.4rem 0.6rem;
   margin-top: 0.5rem;
 }
 
 #subscribeToNewsletter {
+  padding: 0.4rem;
   transition: all 0.3s ease;
 }
 
