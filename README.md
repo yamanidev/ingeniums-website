@@ -1,6 +1,6 @@
 # Ingeniums website
 
- Website for the scientific club Ingeniums of ESI SBA (work in progress).
+Website for the scientific club Ingeniums of ESI SBA (work in progress).
 
 Social media accounts of the club:
 
