@@ -207,9 +207,8 @@ button, input {
 }
 
 .footer .container {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: flex;
+  padding: 4rem 0;
   justify-content: space-between;
 }
 
