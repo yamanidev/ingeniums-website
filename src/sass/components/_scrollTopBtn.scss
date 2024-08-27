@@ -1,37 +1,45 @@
-#scroll-top-btn {
-    width: 55px;
-    height: 55px;
+#scroll-top-btn{
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     right: 5%;
     bottom: 5%;
-    z-index: 3;
+    background: $mainColor;
     color: white;
+    border-radius: 50%;
+    border: none;
     outline: none;
     cursor: pointer;
     opacity: 0;
-    transition: all 0.5s ease;
-    border: none;
-    border-radius: 50%;
-    background: #333232;
+    z-index: 100;
+    transition: 0.5s;
+    &:hover{
+        background: white;
+        color: $mainColor;
+    }
+    i{
+        font-size: 2.5rem;
+    }
 }
 
-#scroll-top-btn:hover {
-    background: white;
-    color: #333232;
-}
-
-#scroll-top-btn i {
-    font-size: 2.5rem;
-}
-
-#scroll-top-btn.active {
+#scroll-top-btn.active{
     opacity: 1;
 }
 
-#scroll-top-btn.hidden{
+.hide-btn{
     opacity: 0;
     display: none;
+    transition: opacity 1s ease-in;
+}
+
+@keyframes scrollTopBtnFade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

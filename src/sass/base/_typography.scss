@@ -4,7 +4,17 @@ body{
     color: #fff;
 }
 
-section p{
+h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+p{
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 2;
@@ -15,20 +25,31 @@ section p{
 a{
     text-decoration: none;
     outline: none;
-    color: inherit;
+    color: #fff;
 }
 
-button, input{
-    font-family: inherit;
-    font-size: inherit;
+.logo-text{
+    text-transform: uppercase;
 }
 
-.section-title{
-    font-size: 3rem;
-    font-weight: 600;
+.top-nav-links{
+    font-weight: 500;
+    a:hover{
+        color: #343a40;
+    }
 }
 
-.footer-title{
-    font-size: 1.4rem;
-    font-weight: 600;
+@media only screen and (max-width: 1231px){
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    button{
+        font-size: 1.5rem;
+    }
 }

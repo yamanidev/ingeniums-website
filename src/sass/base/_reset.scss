@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Is not supported for Safari and IE */
 html{
     scroll-behavior: smooth;
 }
@@ -12,11 +13,22 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: $brown-dark;
+    background: #292828;
 }
 
-ul{
-    list-style: none;
+main{
+    flex-grow: 1;
+}
+
+input, textarea, fieldset{
+    outline: none;
+    border: none;
+}
+
+textarea{
+    resize: none;
+    height: 200px;
+
 }
 
 hr{
@@ -24,10 +36,28 @@ hr{
     margin: 3rem auto;
 }
 
-button, input{
-    border: none;
+section{
+    margin: 2rem auto;
+}
+
+article{
+    margin: 4rem auto;
 }
 
 button{
     cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+header{
+    background: $mainColor;
+    position: sticky;
+    top: 0;
+    height: 8vh;
+    z-index: 1;
+}
+
+li{
+    list-style: none;
 }

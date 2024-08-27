@@ -1,131 +1,127 @@
 .footer{
-    margin-top: auto;
-    background-color: $brown;
-}
-
-.footer .container{
     display: flex;
-    padding: 4rem 0;
-    justify-content: space-between;
+    justify-content: center;
+    background: $mainColor;
+    margin-top: 2rem;
+    div{
+        margin: 1rem 2rem;
+        height: 100%;
+    }
 }
 
-.footer-title{
-    margin-bottom: 1rem;
-    position: relative;
+#copyrights{
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
 }
 
-.footer-title::before{
+
+.footer-info{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.footer-info-col{
+    ul{
+        margin-top: 1rem;
+        li{
+            margin: 0.3rem 0;
+            font-weight: 400;
+        }
+    }
+    h4{
+        position: relative;
+    }
+}
+
+.club-info{
+    border-bottom: 1px solid white;
+}
+
+.footer-info-col h4::before{
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -5px;
     background: white;
     box-sizing: border-box;
-    height: 0.125rem;
+    height: 0.1rem;
     width: 4rem;
 }
 
-.footer-contact-info{
-    width: 300px;
-}
-
-.footer-contact-info ul li{
-    padding: 0.3rem 0;
+.footer-media{
+    width: 40%;
     display: flex;
-    align-items: center;
-}
-
-.contact-info-icon{
-    height: 30px;
-    width: 30px;
-    margin-right: 0.5rem;
-    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
     justify-content: center;
     align-items: center;
-    color: $brown;
-    border-radius: 50%;
-    background-color: #fff;
 }
 
-.sms{
-    margin-top: 1.5rem;
+.follow-us{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    li{
-        padding: 0 0.3rem;
+    h3{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    ul{
+        display: flex;
     }
 }
 
 .sm-icon{
-    height: 40px;
-    width: 40px;
+    margin: 0 2rem;
+    i{
+        font-size: 1.7rem;
+    }
+}
+.newsletter-form{
+    p{
+        text-align: center;
+        font-weight: 500; 
+    }
+}
+
+.email-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
-    color: $brown;
-    border-radius: 50%;
-    background-color: #fff;
-    transition: all 0.3s ease;
-}
-
-.sms a{
-    display: inline-block;
-}
-
-.sms a:hover .sm-icon, .sms a:active .sm-icon{
-    outline: 1px solid #fff;
-    color: #fff;
-    background-color: $brown-dark;
+    button{
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0.8rem;
+    }
 }
 
 .newsletter-input{
-    text-align: center;
+    height: 40px;
+    width: 280px;
+    padding: 0 3rem 0 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
 }
 
-#newsletterInput, #subscribeToNewsletter{
-    border-radius: 5px;
-}
-
-#newsletterInput{
-    width: 100%;
-    max-width: 320px;
-    padding: 0.4rem 0.6rem;
-    margin-top: 0.5rem;
-}
-
-#subscribeToNewsletter{
-    padding: 0.4rem;
-    transition: all 0.3s ease;
-}
-
-#subscribeToNewsletter:hover, #subscribeToNewsletter:active{
-    outline: 1px solid #fff;
-    color: #fff;
-    background-color: $brown-dark;
-}
-
-@media screen and (max-width: 920px){
-    .footer .container{
+@media screen and (max-width: 1260px){
+    .footer{
         flex-direction: column;
-        gap: 2rem;
+        align-items: center;
     }
 
-    .footer .container > *{
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
+    .footer-media{
+        order: 1;
+        width: 60%;
     }
 
-    #subscribeToNewsletter{
-        margin-top: 0.5rem;
+    .footer-info{
+        order: 2;
+        width: 90%;
     }
-}
-
-.copyrights{
-    margin-top: auto;
-    padding: 0.2rem 0.5rem;
-    font-weight: 200;
-    text-align: center;
-    background-color: $brown-dark;
 }
